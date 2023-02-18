@@ -14,4 +14,13 @@ module.exports = {
     }
     return config
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/pages/login',
+        permanent: true
+      }
+    ]
+  }
 }
