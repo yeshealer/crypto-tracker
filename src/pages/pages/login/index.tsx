@@ -68,14 +68,14 @@ const FormControlLabel = styled(MuiFormControlLabel)<FormControlLabelProps>(({ t
   }
 }))
 
-const CardImage = styled('img')(({ theme }) => ({
+const CardImage = styled('img')(() => ({
   position: 'absolute',
   height: '100%',
   width: '100%',
   top: '0'
 }))
 
-const Image = styled('img')(({ theme }) => ({}))
+const Image = styled('img')(() => ({}))
 
 const LoginPage = () => {
   // ** State

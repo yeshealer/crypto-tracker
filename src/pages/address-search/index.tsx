@@ -1,5 +1,5 @@
 // ** React Imports
-import { Fragment, useState, forwardRef } from 'react'
+import { useState, forwardRef } from 'react'
 
 // ** MUI Imports
 import Grid from '@mui/material/Grid'
@@ -62,9 +62,6 @@ const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 const AddressSearch = () => {
-    // ** Hook
-    const theme = useTheme();
-
     // ** State
     const [searchAddress, setSearchAddress] = useState<string>('');
     const [evmCurrencyDetails, setEvmCurrencyDetails] = useState<CurrencyTxnTypes[]>([]);
