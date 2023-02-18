@@ -57,28 +57,28 @@ const navigation = (): VerticalNavItemsType => {
     },
     {
       title: 'Wallet Statement',
-      path: '/icons',
+      path: '/wallet-statement',
       icon: GoogleCirclesExtended
     },
     {
       title: 'Money Flow Graph',
       icon: CreditCardOutline,
-      path: '/cards'
+      path: '/money-flow-graph'
     },
     {
       title: 'Address Monitoring',
       icon: Table,
-      path: '/tables'
+      path: '/address-monitoring'
     },
     {
       icon: CubeOutline,
       title: 'Deconfliction',
-      path: '/form-layouts'
+      path: '/deconfliction'
     },
     {
       icon: SupportIcon,
       title: 'Support',
-      path: '/form-layouts'
+      path: '/support'
     }
   ]
 }
