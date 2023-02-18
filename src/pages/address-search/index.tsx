@@ -10,7 +10,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Snackbar from '@mui/material/Snackbar';
 import { SelectChangeEvent } from '@mui/material/Select';
 import { DateRange } from '@mui/x-date-pickers-pro/DateRangePicker';
-import { useTheme } from '@mui/material/styles'
 import MuiAlert, { AlertProps } from '@mui/material/Alert';
 
 // ** Icons Imports
