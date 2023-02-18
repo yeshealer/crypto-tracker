@@ -13,14 +13,5 @@ module.exports = {
       apexcharts: path.resolve(__dirname, './node_modules/apexcharts-clevision')
     }
     return config
-  },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/pages/login',
-        permanent: true
-      }
-    ]
   }
 }
