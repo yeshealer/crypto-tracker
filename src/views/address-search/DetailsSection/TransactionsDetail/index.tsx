@@ -138,12 +138,12 @@ export default function TransactionsDetail({
                 <Paper variant="outlined" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between', width: 'max-content' }}>
                     <Typography variant='subtitle2'>Filter By Direction</Typography>
                     <ButtonGroup variant="text" color='secondary' aria-label="text button group">
-                        {directionConfig.map((directionOne) => {
+                        {directionConfig.map((directionOne, index) => {
                             return (
                                 filterDirection === directionOne.name ? (
-                                    <Button variant='contained' onClick={() => handleFilterByDirection(directionOne.name)} sx={{ width: 50 }} color="primary">{directionOne.icon}</Button>
+                                    <Button variant='contained' key={index} onClick={() => handleFilterByDirection(directionOne.name)} sx={{ width: 50 }} color="primary">{directionOne.icon}</Button>
                                 ) : (
-                                    <Button onClick={() => handleFilterByDirection(directionOne.name)} sx={{ width: 50 }} color="primary">{directionOne.icon}</Button>
+                                    <Button key={index} onClick={() => handleFilterByDirection(directionOne.name)} sx={{ width: 50 }} color="primary">{directionOne.icon}</Button>
                                 )
                             )
                         })}

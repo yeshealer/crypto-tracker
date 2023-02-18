@@ -37,10 +37,10 @@ export default function TopFilterBar({
                 <DateRangePicker
                     calendars={2}
                     value={dateRange}
-                    onChange={(newValue) => {
+                    onChange={(newValue: any) => {
                         setDateRange(newValue);
                     }}
-                    renderInput={(startProps, endProps) => (
+                    renderInput={(startProps: any, endProps: any) => (
                         <React.Fragment>
                             <TextField {...startProps} size='small' />
                             <Box sx={{ mx: 2 }}> to </Box>
